@@ -178,7 +178,7 @@ export default {
                 this.status = 0
               }
             })
-          }, 0)
+          }, 15)
           break
       }
     }
