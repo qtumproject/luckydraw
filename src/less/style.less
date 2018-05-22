@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #0b0b0d;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  position: relative;
+  .canvas-container {
+    width: 30%;
+    margin-left: 33%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    &:before {
+      content: '';
+      padding-top: 100%;
+      display: block;
+    }
+    canvas {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  button.go {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-54%, 600%);
+    background-color: transparent;
+    color: #fff;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    &:hover {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    @media (max-width: 1920px) {
+      transform: translate(-54%, 17.2vw);
+      font-size: 2.75vw;
+    }
+  }
+}
+a {
+  color: #fff;
+}
+header {
+  height: 60px;
+  left: 0;
+  right: 0;
+  img {
+    height: 60px;
+    width: auto;
+  }
+  .settings {
+    height: 100%;
+    button {
+      outline: none;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      height: 30px;
+      background-color: transparent;
+      margin: 0 5px;
+      padding: 0 15px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: rgba(255, 255, 255, 0.35);
+      }
+    }
+  }
+}
